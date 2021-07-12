@@ -11,10 +11,12 @@
 *.gch
 *.pch
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
+
+#
+*.idea
+*buidl-debug*
+
+
 
 # Fortran module files
 *.mod
