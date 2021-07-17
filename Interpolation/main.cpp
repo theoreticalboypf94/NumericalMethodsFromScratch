@@ -1,10 +1,10 @@
 #include <iostream>
 #include "LagrangeInterpolation.h"
 
-typedef  std::vector<std::pair<int,int>> IN;
+typedef  std::vector<std::pair<double,double>> IN;
 int main() {
     IN input = {{1,2},{3,4},{5,6}};
-    LagrangeInterpolation<int> fun(input);
-    std::cout << "Hello, World!" << std::endl;
+    LagrangeInterpolation<double> fun(input);
+    std::cout << fun.evaluate(3.5);
     return 0;
 }
